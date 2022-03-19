@@ -104,5 +104,8 @@
     <Folder Include="WindowFolder\DirectorFolder\" />
     <Folder Include="WindowFolder\UserFolder\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourcesFolder\KFz3UmG2g8c.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
