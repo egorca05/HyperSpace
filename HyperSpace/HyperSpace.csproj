@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ClassFolder\MBClass.cs" />
+    <Compile Include="WindowFolder\AdminFolder\AdminMapWindow.xaml.cs">
+      <DependentUpon>AdminMapWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\NoRoleFolder\AutorizationWindow.xaml.cs">
       <DependentUpon>AutorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ResourcesFolder\Dictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\AdminFolder\AdminMapWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,12 +107,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataFolder\" />
-    <Folder Include="WindowFolder\AdminFolder\" />
     <Folder Include="WindowFolder\DirectorFolder\" />
     <Folder Include="WindowFolder\UserFolder\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ResourcesFolder\KFz3UmG2g8c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourcesFolder\ImgFolder\charm_power.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\iconoir_restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourcesFolder\ImgFolder\warning.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\update.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

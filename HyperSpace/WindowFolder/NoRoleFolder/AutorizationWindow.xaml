@@ -33,7 +33,7 @@
                Grid.Row="3" Style="{StaticResource LblNormal}"/>
         <Button x:Name="BtmIn" Content="Войти" Grid.Column="1"
                 Grid.Row="4" Grid.ColumnSpan="2"
-                Style="{DynamicResource BtnActive}"/>
+                Style="{DynamicResource BtnActive}" Click="BtmIn_Click"/>
         <Button x:Name="BtmOut" Content="Выйти" Grid.Column="3"
                 Grid.Row="4" Style="{DynamicResource BtnOut }"/>
         <TextBox x:Name="TbLogin" Grid.Column="2" Grid.Row="2"

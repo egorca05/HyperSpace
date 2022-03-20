@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HyperSpace.WindowFolder.AdminFolder;
 
 namespace HyperSpace.WindowFolder.NoRoleFolder
 {
@@ -22,6 +23,14 @@ namespace HyperSpace.WindowFolder.NoRoleFolder
         public AutorizationWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtmIn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminMapWindow adminMapWindow = new AdminMapWindow();
+            adminMapWindow.Show();
+            this.Close();
+
         }
     }
 }
