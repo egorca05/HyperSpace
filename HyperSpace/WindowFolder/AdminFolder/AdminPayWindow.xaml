@@ -42,10 +42,14 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Label x:Name="LblPay" Content="Login:" 
                    Style="{StaticResource LblNormal}"/>
             <TextBox x:Name="LoginTB" Grid.Column="1"/>
+            <Label x:Name="LblMoney" Content="Количество:" 
+                   Style="{StaticResource LblNormal}" Grid.Row="2"/>
+            <TextBox x:Name="MoneyTB" Grid.Column="1" Grid.Row="2"/>
             <DataGrid Grid.Row="1" Grid.ColumnSpan="2" 
                       AutoGenerateColumns="False" IsReadOnly="True">
                 <DataGrid.Columns>
@@ -54,10 +58,10 @@
                     <DataGridTextColumn Header="Баланс" Binding="{Binding MoneyBalans}"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button x:Name="PayMoneyBtn" Content="Налличные" Grid.Row="2"
+            <Button x:Name="PayMoneyBtn" Content="Налличные" Grid.Row="3"
                     Style="{DynamicResource BtnPassiv}"
                     Click="PayCardBtn_Click"/>
-            <Button x:Name="PayCardBtn" Content="Карта" Grid.Row="2"
+            <Button x:Name="PayCardBtn" Content="Карта" Grid.Row="3"
                     Grid.Column="1"
                     Style="{DynamicResource BtnPassiv}"
                     Click="PayCardBtn_Click"/>

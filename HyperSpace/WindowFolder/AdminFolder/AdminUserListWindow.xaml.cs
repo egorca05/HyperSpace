@@ -11,34 +11,30 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using HyperSpace.ClassFolder;
-using HyperSpace.WindowFolder.AdminFolder;
 
 namespace HyperSpace.WindowFolder.AdminFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AdminPayWindow.xaml
+    /// Логика взаимодействия для AdminUserListWindow.xaml
     /// </summary>
-    public partial class AdminPayWindow : Window
+    public partial class AdminUserListWindow : Window
     {
-        public AdminPayWindow()
+        public AdminUserListWindow()
         {
             InitializeComponent();
-        }      
+        }
 
-        private void PayCardBtn_Click(object sender, RoutedEventArgs e)
+        private void BtnUser_Click(object sender, RoutedEventArgs e)
         {
-            MBClass.MBInformation("Успешно пополнено");
+
         }
 
         private void BtnMap_Click(object sender, RoutedEventArgs e)
         {
-            AdminMapWindow adminMapWindow = new AdminMapWindow();
-            adminMapWindow.Show();
-            this.Close();
+
         }
 
-        private void BtnUser_Click(object sender, RoutedEventArgs e)
+        private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
 
         }
