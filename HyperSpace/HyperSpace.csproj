@@ -59,6 +59,9 @@
     <Compile Include="WindowFolder\AdminFolder\AdminMapWindow.xaml.cs">
       <DependentUpon>AdminMapWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowFolder\AdminFolder\AdminPayWindow.xaml.cs">
+      <DependentUpon>AdminPayWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\NoRoleFolder\AutorizationWindow.xaml.cs">
       <DependentUpon>AutorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -71,6 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowFolder\AdminFolder\AdminMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\AdminFolder\AdminPayWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

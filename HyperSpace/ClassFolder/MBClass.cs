@@ -9,5 +9,6 @@ namespace HyperSpace.ClassFolder
 {
     internal class MBClass
     {
+
     }
 }

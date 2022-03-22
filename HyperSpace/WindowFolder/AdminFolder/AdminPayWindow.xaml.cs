@@ -15,20 +15,28 @@ using System.Windows.Shapes;
 namespace HyperSpace.WindowFolder.AdminFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AdminMapWindow.xaml
+    /// Логика взаимодействия для AdminPayWindow.xaml
     /// </summary>
-    public partial class AdminMapWindow : Window
+    public partial class AdminPayWindow : Window
     {
-        public AdminMapWindow()
+        public AdminPayWindow()
         {
             InitializeComponent();
+        }      
+
+        private void PayCardBtn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
-        private void BtnPay_Click(object sender, RoutedEventArgs e)
+        private void BtnMap_Click(object sender, RoutedEventArgs e)
         {
-            AdminPayWindow adminPayWindow = new AdminPayWindow();
-            adminPayWindow.Show();
-            this.Close();
+
+        }
+
+        private void BtnUser_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
