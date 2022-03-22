@@ -34,5 +34,30 @@
                 Click="BtnUser_Click"/>
         <Label x:Name="LblLogo" Content="Пользователи" Grid.Column="2"
                Grid.Row="1" Style="{StaticResource LblLogo}"/>
+        <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="SearchLbl" Content="Поиск:" Grid.Column="1"
+                   Style="{StaticResource LblNormal}"/>
+            <Button x:Name="RegistrationBtn"  Content="Регистрация"
+                    Style="{DynamicResource BtnPassiv}"/>
+            <TextBox x:Name="SearchTB" Grid.Column="3"/>
+            <DataGrid x:Name="UserDG" AutoGenerateColumns="False" 
+                      IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="3">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="№" Binding="{Binding IdUser}"/>
+                    <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}"/>
+                    <DataGridTextColumn Header="Баланс" Binding="{Binding MoneyBalans}"/>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding NameRole}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </Window>

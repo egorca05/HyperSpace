@@ -79,7 +79,6 @@
     </Style>
 
     <Style TargetType="Button" x:Key="BtnPassiv" BasedOn="{StaticResource BtnActive}">
-        <Setter Property="Width" Value="200"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate x:Name="btnActiv" TargetType="{x:Type Button}">
