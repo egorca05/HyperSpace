@@ -48,7 +48,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             AdminRegistrationWindow adminRegistrationWindow = 
                 new AdminRegistrationWindow();
             adminRegistrationWindow.Show();
-            
+            //dfsdfsfd
         }
     }
 }
