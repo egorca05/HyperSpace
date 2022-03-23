@@ -47,7 +47,8 @@
             <Label x:Name="SearchLbl" Content="Поиск:" Grid.Column="1"
                    Style="{StaticResource LblNormal}"/>
             <Button x:Name="RegistrationBtn"  Content="Регистрация"
-                    Style="{DynamicResource BtnPassiv}"/>
+                    Style="{DynamicResource BtnPassiv}"
+                    Click="RegistrationBtn_Click"/>
             <TextBox x:Name="SearchTB" Grid.Column="3"/>
             <DataGrid x:Name="UserDG" AutoGenerateColumns="False" 
                       IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="3">

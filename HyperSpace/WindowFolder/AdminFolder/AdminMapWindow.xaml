@@ -29,7 +29,8 @@
                 Grid.Row="3" Style="{DynamicResource BtnMenuAdmin}"
                 Click="BtnPay_Click"/>
         <Button x:Name="BtnUser" Content="Пользователи" Grid.Column="1" 
-                Grid.Row="4" Style="{DynamicResource BtnMenuAdmin}"/>
+                Grid.Row="4" Style="{DynamicResource BtnMenuAdmin}"
+                Click="BtnUser_Click"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
             <Button x:Name="BtnPower"  Grid.Column="1" Grid.Row="4" 
                     Style="{DynamicResource BtnMenuMap}">
@@ -51,6 +52,7 @@
                 <Image Source="/ResourcesFolder/ImgFolder/warning.png" 
                        Width="40"/>
             </Button>
+            <Label x:Name="LogoLbl" Content="Карта" Style="{StaticResource LblLogo}"/>
         </StackPanel>
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
             <Grid.ColumnDefinitions>

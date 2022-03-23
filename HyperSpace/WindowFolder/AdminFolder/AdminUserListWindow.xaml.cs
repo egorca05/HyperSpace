@@ -31,12 +31,24 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
         private void BtnMap_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminMapWindow adminMapWindow = new AdminMapWindow();
+            adminMapWindow.Show();
+            this.Close();
         }
 
         private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
+            AdminPayWindow adminPayWindow = new AdminPayWindow();
+            adminPayWindow.Show();
+            this.Close();
+        }
 
+        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        {
+            AdminRegistrationWindow adminRegistrationWindow = 
+                new AdminRegistrationWindow();
+            adminRegistrationWindow.Show();
+            
         }
     }
 }

@@ -40,7 +40,9 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
         private void BtnUser_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminUserListWindow adminUserListWindow = new AdminUserListWindow();
+            adminUserListWindow.Show();
+            this.Close();
         }
     }
 }

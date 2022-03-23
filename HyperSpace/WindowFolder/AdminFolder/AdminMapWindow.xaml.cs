@@ -30,5 +30,12 @@ namespace HyperSpace.WindowFolder.AdminFolder
             adminPayWindow.Show();
             this.Close();
         }
+
+        private void BtnUser_Click(object sender, RoutedEventArgs e)
+        {
+            AdminUserListWindow adminUserListWindow = new AdminUserListWindow();
+            adminUserListWindow.Show();
+            this.Close();
+        }
     }
 }
