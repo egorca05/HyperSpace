@@ -1,0 +1,85 @@
+﻿<Window x:Class="HyperSpace.WindowFolder.DirectorFolder.DirectorMapWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HyperSpace.WindowFolder.DirectorFolder"
+        mc:Ignorable="d"
+        Title="Карта" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="ImgLogo" Style="{DynamicResource ImgLogo}"/>
+        <Button x:Name="BtnMap" Content="Карта" Grid.Column="1" 
+                Grid.Row="2" Style="{DynamicResource BtnMenuAdminActive}"/>
+        <Button x:Name="BtnReport" Content="Отчеты" Grid.Column="1" 
+                Grid.Row="3" Style="{DynamicResource BtnMenuAdmin}"
+                Click="BtnReport_Click"/>
+        <Button x:Name="BtnUser" Content="Пользователи" Grid.Column="1" 
+                Grid.Row="4" Style="{DynamicResource BtnMenuAdmin}"
+                Click="BtnUser_Click"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
+            <Button x:Name="BtnPower"  Grid.Column="1" Grid.Row="4" 
+                    Style="{DynamicResource BtnMenuMap}">
+                <Image Source="/ResourcesFolder/ImgFolder/charm_power.png" 
+                       Width="40"/>
+            </Button>
+            <Button x:Name="BtnRestart"  Grid.Column="1" Grid.Row="4"
+                    Style="{DynamicResource BtnMenuMap}">
+                <Image Source="/ResourcesFolder/ImgFolder/iconoir_restart.png"
+                       Width="40"/>
+            </Button>
+            <Button x:Name="BtnUpDate"  Grid.Column="1" Grid.Row="4"
+                    Style="{DynamicResource BtnMenuMap}">
+                <Image Source="/ResourcesFolder/ImgFolder/update.png"
+                       Width="40"/>
+            </Button>
+            <Button x:Name="BtnWarning"  Grid.Column="1" Grid.Row="4" 
+                    Style="{DynamicResource BtnMenuMap}">
+                <Image Source="/ResourcesFolder/ImgFolder/warning.png" 
+                       Width="40"/>
+            </Button>
+            <Label x:Name="LogoLbl" Content="Карта" Style="{StaticResource LblLogo}"/>
+        </StackPanel>
+        <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="PC1" Content="1" Style="{DynamicResource BtnPC}"/>
+            <Button x:Name="PC2" Content="2" Style="{DynamicResource BtnPCOn}"
+                    Grid.Column="1" Grid.Row="0"/>
+            <Button x:Name="PC3" Content="3" Style="{DynamicResource BtnPCUpDate}"
+                    Grid.Column="2" Grid.Row="0"/>
+            <Button x:Name="PC4" Content="4" Style="{DynamicResource BtnPC}"
+                    Grid.Column="0" Grid.Row="2"/>
+        </Grid>
+    </Grid>
+</Window>

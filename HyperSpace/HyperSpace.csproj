@@ -68,6 +68,15 @@
     <Compile Include="WindowFolder\AdminFolder\AdminUserListWindow.xaml.cs">
       <DependentUpon>AdminUserListWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowFolder\DirectorFolder\DirectorMapWindow.xaml.cs">
+      <DependentUpon>DirectorMapWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\DirectorFolder\DirectorReportWindow.xaml.cs">
+      <DependentUpon>DirectorReportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFolder\DirectorFolder\DirectorUserListWindow.xaml.cs">
+      <DependentUpon>DirectorUserListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\NoRoleFolder\AutorizationWindow.xaml.cs">
       <DependentUpon>AutorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -92,6 +101,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowFolder\AdminFolder\AdminUserListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\DirectorFolder\DirectorMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\DirectorFolder\DirectorReportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\DirectorFolder\DirectorUserListWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,7 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataFolder\" />
-    <Folder Include="WindowFolder\DirectorFolder\" />
     <Folder Include="WindowFolder\UserFolder\" />
   </ItemGroup>
   <ItemGroup>
