@@ -53,7 +53,11 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№" Binding="{Binding IdUser}"/>
                     <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}"/>
-                    <DataGridTextColumn Header="Баланс" Binding="{Binding MoneyBalans}"/>
+                    <DataGridTextColumn Header="№ PC" Binding="{Binding }"/>
+                    <DataGridTextColumn Header="Тариф" Binding="{Binding }"/>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding }"/>
+                    <DataGridTextColumn Header="Вход" Binding="{Binding }"/>
+                    <DataGridTextColumn Header="Выход" Binding="{Binding }"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

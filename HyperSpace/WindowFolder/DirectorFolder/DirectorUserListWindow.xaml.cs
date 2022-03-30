@@ -38,5 +38,10 @@ namespace HyperSpace.WindowFolder.DirectorFolder
             directorReportWindow.Show();
             this.Close();
         }
+
+        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

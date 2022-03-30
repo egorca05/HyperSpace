@@ -71,6 +71,9 @@
     <Compile Include="WindowFolder\DirectorFolder\DirectorMapWindow.xaml.cs">
       <DependentUpon>DirectorMapWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowFolder\DirectorFolder\DirectorRegistrationWindow.xaml.cs">
+      <DependentUpon>DirectorRegistrationWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\DirectorFolder\DirectorReportWindow.xaml.cs">
       <DependentUpon>DirectorReportWindow.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowFolder\DirectorFolder\DirectorMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\DirectorFolder\DirectorRegistrationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
