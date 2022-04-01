@@ -44,5 +44,10 @@ namespace HyperSpace.WindowFolder.AdminFolder
             adminUserListWindow.Show();
             this.Close();
         }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMessageBox();
+        }
     }
 }

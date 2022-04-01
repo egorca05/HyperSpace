@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace HyperSpace
+namespace HyperSpace.WindowFolder.UserFolder
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для UserGameWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class UserGameWindow : Window
     {
-        public Window1()
+        public UserGameWindow()
         {
             InitializeComponent();
         }

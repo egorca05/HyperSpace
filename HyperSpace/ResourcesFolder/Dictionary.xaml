@@ -206,6 +206,28 @@
         </Setter>
     </Style>
 
+    <Style TargetType="Button" x:Key="BtnExitElipse" BasedOn="{StaticResource BtnPC}">
+        <Setter Property="Grid.Column" Value="2"/>
+        <Setter Property="Grid.Row" Value="1"/>
+        <Setter Property="VerticalAlignment" Value="Top"/>
+        <Setter Property="HorizontalAlignment" Value="Right"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="BorderStyle" CornerRadius="50"
+                            BorderBrush="{x:Null}" BorderThickness="3"
+                            Background="Red">
+                        <ContentPresenter HorizontalAlignment="Right"
+                                          VerticalAlignment="Top"
+                                          TextElement.FontFamily="Roboto"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style TargetType="DataGrid">
         <Setter Property="Background" Value="Black"/>
         <Setter Property="BorderBrush" Value="MediumPurple"/>
@@ -222,5 +244,5 @@
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
 
-    <>
+    
 </ResourceDictionary>

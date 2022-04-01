@@ -56,9 +56,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ClassFolder\MBClass.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
     <Compile Include="WindowFolder\AdminFolder\AdminMapWindow.xaml.cs">
       <DependentUpon>AdminMapWindow.xaml</DependentUpon>
     </Compile>
@@ -90,11 +87,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="WindowFolder\UserFolder\UserGameWindow.xaml.cs">
+      <DependentUpon>UserGameWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="ResourcesFolder\Dictionary.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -134,6 +130,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="WindowFolder\UserFolder\UserGameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -163,7 +163,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataFolder\" />
-    <Folder Include="WindowFolder\UserFolder\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ResourcesFolder\KFz3UmG2g8c.jpg" />

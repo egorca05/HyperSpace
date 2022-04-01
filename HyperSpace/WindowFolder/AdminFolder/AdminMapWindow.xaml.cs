@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HyperSpace.ClassFolder;
+
 
 namespace HyperSpace.WindowFolder.AdminFolder
 {
@@ -36,6 +38,11 @@ namespace HyperSpace.WindowFolder.AdminFolder
             AdminUserListWindow adminUserListWindow = new AdminUserListWindow();
             adminUserListWindow.Show();
             this.Close();
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMessageBox();
         }
     }
 }

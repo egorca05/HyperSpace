@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.DirectorFolder"
         mc:Ignorable="d"
          Title="Регистрация" Height="450" Width="500"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
