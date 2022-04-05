@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.UserFolder"
         mc:Ignorable="d"
         Title="Игры" Height="840" Width="962" WindowStyle="None"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>

@@ -25,6 +25,9 @@ namespace HyperSpace.WindowFolder.UserFolder
             InitializeComponent();
         }
 
-        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //LoginLbl.Content = DBEntities.GetContext().User.
+        }
     }
 }
