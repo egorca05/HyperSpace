@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.WindowFolder.DirectorFolder;
+using HyperSpace.ClassFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -41,6 +42,14 @@ namespace HyperSpace.WindowFolder.DirectorFolder
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
+            DirectorRegistrationWindow directorRegistrationWindow = new DirectorRegistrationWindow();
+            directorRegistrationWindow.Show();
+            this.Close();
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMessageBox();
 
         }
     }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.ClassFolder;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.AdminFolder
 {
@@ -23,6 +24,8 @@ namespace HyperSpace.WindowFolder.AdminFolder
         public AdminUserListWindow()
         {
             InitializeComponent();
+            UserDG.ItemsSource = DBEntities.GetContext().User.ToList().
+                OrderBy(c => c.LoginUser);
         }
 
         private void BtnUser_Click(object sender, RoutedEventArgs e)
@@ -54,6 +57,24 @@ namespace HyperSpace.WindowFolder.AdminFolder
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MBClass.ExitMessageBox();
+        }
+
+        private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                UserDG.ItemsSource = DBEntities.GetContext().User.Where
+                    (u => u.LoginUser.StartsWith(SearchTB.Text));
+
+                if(UserDG.Items.Count <= 0)
+                {
+                    MBClass.MBError("Пользователь не найден");
+                }
+            }
+            catch (Exception ex)
+            {
+                MBClass.MBError(ex);
+            }
         }
     }
 }

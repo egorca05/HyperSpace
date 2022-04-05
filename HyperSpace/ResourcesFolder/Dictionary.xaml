@@ -5,7 +5,7 @@
     </Style>
     
     <Style TargetType="Image" x:Key="ImgLogo">
-        <Setter Property="Source" Value="/ResourcesFolder/KFz3UmG2g8c.jpg"/>
+        <Setter Property="Source" Value="/ResourcesFolder/ImgFolder/Group 7.png"/>
         <Setter Property="Grid.Column" Value="1"/>
         <Setter Property="Grid.Row" Value="1"/>
     </Style>
@@ -26,6 +26,23 @@
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Right"/>
         <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style x:Key="LblBalans" TargetType="Label" BasedOn="{StaticResource LblNormal}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Foreground" Value="Gold"/>
+    </Style>
+
+    <Style x:Key="LblBalans2" TargetType="Label" BasedOn="{StaticResource LblNormal}">
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style x:Key="LblGame" TargetType="Label" BasedOn="{StaticResource LblNormal}">
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
 
     <Style TargetType="TextBox">
@@ -228,6 +245,24 @@
         </Setter>
     </Style>
 
+    <Style TargetType="Button" x:Key="BtnGame" BasedOn="{StaticResource BtnMenuAdminActive}">
+        <Setter Property="VerticalContentAlignment" Value="Bottom"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="BorderStyle" CornerRadius="50"
+                            BorderBrush="{x:Null}" BorderThickness="3"
+                            Background="#3A3A3A">
+                        <ContentPresenter HorizontalAlignment="Center"
+                                          VerticalAlignment="Top"
+                                          TextElement.FontFamily="Roboto"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <Style TargetType="DataGrid">
         <Setter Property="Background" Value="Black"/>
         <Setter Property="BorderBrush" Value="MediumPurple"/>
@@ -239,10 +274,10 @@
         <Setter Property="FontFamily" Value="Roboto"/>
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="Foreground" Value="White"/>
-        <Setter Property="Padding" Value="10"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
 
-    
+
+
 </ResourceDictionary>

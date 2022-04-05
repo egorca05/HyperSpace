@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.WindowFolder.DirectorFolder;
+using HyperSpace.ClassFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -38,6 +39,11 @@ namespace HyperSpace.WindowFolder.DirectorFolder
                 new DirectorUserListWindow();
             directorUserListWindow.Show();
             this.Close();
+        }
+
+        private void BtnExit_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMessageBox();
         }
     }
 }

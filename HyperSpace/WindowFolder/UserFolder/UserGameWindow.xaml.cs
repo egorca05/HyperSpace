@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.UserFolder
 {
@@ -23,5 +24,7 @@ namespace HyperSpace.WindowFolder.UserFolder
         {
             InitializeComponent();
         }
+
+        
     }
 }

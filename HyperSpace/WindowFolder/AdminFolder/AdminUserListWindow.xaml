@@ -51,14 +51,14 @@
             <Button x:Name="RegistrationBtn"  Content="Регистрация"
                     Style="{DynamicResource BtnPassiv}"
                     Click="RegistrationBtn_Click"/>
-            <TextBox x:Name="SearchTB" Grid.Column="3"/>
+            <TextBox x:Name="SearchTB" Grid.Column="3" TextChanged="SearchTB_TextChanged"/>
             <DataGrid x:Name="UserDG" AutoGenerateColumns="False" 
                       IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="3">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="№" Binding="{Binding IdUser}"/>
-                    <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}"/>
-                    <DataGridTextColumn Header="Баланс" Binding="{Binding MoneyBalans}"/>
-                    <DataGridTextColumn Header="Роль" Binding="{Binding NameRole}"/>
+                    <DataGridTextColumn Header="№" Binding="{Binding IdUser}" Width="50"/>
+                    <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}" Width="*"/>
+                    <DataGridTextColumn Header="Баланс" Binding="{Binding Balans}" Width="*"/>
+                    <DataGridTextColumn Header="Роль" Binding="{Binding Role.NameRole}" Width="*"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>
