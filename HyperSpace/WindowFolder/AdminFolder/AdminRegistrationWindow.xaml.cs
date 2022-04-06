@@ -30,20 +30,20 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            AddUser();
+            MBClass.MBInformation("Гуд");
+            this.Close(); 
         }
 
         private void AddUser()
         {
-            var useradd = new User();
+            DBEntities.GetContext().User.Add(new User()
             {
-                LoginUser = loginTB.Text;
-                PasswordUser = PasswordTB.Text;
-                IdRole = 2;
-            }
-            DBEntities.GetContext().User.Add(useradd);
+                LoginUser = loginTB.Text,
+                PasswordUser = PasswordTB.Text,
+                IdRole = 2
+            });            
             DBEntities.GetContext().SaveChanges();
-            user.IdUser=useradd.IdUser;
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)

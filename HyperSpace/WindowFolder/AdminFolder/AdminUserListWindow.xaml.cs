@@ -51,7 +51,9 @@ namespace HyperSpace.WindowFolder.AdminFolder
         {
             AdminRegistrationWindow adminRegistrationWindow = 
                 new AdminRegistrationWindow();
-            adminRegistrationWindow.Show();
+            adminRegistrationWindow.ShowDialog();
+            UserDG.ItemsSource = DBEntities.GetContext().User.ToList().
+               OrderBy(c => c.LoginUser);
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
@@ -64,9 +66,9 @@ namespace HyperSpace.WindowFolder.AdminFolder
             try
             {
                 UserDG.ItemsSource = DBEntities.GetContext().User.Where
-                    (u => u.LoginUser.StartsWith(SearchTB.Text));
+                    (u => u.LoginUser.StartsWith(SearchTB.Text)).ToList();
 
-                if(UserDG.Items.Count <= 0)
+                if (UserDG.Items.Count <= 0)
                 {
                     MBClass.MBError("Пользователь не найден");
                 }

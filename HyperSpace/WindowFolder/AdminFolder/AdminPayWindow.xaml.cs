@@ -31,6 +31,9 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
         private void PayCardBtn_Click(object sender, RoutedEventArgs e)
         {
+            User user = LoginDG.SelectedItem as User;
+            user.Balans += Convert.ToDecimal(MoneyTB.Text);
+            DBEntities.GetContext().SaveChanges();
             MBClass.MBInformation("Успешно пополнено");
         }
 
@@ -51,6 +54,13 @@ namespace HyperSpace.WindowFolder.AdminFolder
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MBClass.ExitMessageBox();
+        }
+
+        private void LoginDG_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            
+            User user=LoginDG.SelectedItem as User;
+            LoginTB.Text = Convert.ToString(user.Balans);
         }
     }
 }

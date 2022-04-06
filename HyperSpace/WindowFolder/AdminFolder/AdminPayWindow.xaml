@@ -53,7 +53,7 @@
                    Style="{StaticResource LblNormal}" Grid.Row="2"/>
             <TextBox x:Name="MoneyTB" Grid.Column="1" Grid.Row="2"/>
             <DataGrid x:Name="LoginDG" Grid.Row="1" Grid.ColumnSpan="2" 
-                      AutoGenerateColumns="False" IsReadOnly="True">
+                      AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="LoginDG_MouseDoubleClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№" Binding="{Binding IdUser}" Width="50"/>
                     <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}" Width="*"/>
