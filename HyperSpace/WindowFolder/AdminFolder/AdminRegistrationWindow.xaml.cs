@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HyperSpace.DataFolder;
+using HyperSpace.ClassFolder;
 
 namespace HyperSpace.WindowFolder.AdminFolder
 {
@@ -19,19 +21,35 @@ namespace HyperSpace.WindowFolder.AdminFolder
     /// </summary>
     public partial class AdminRegistrationWindow : Window
     {
+        User user = new User();
         public AdminRegistrationWindow()
         {
             InitializeComponent();
+            DataContext = user;
         }
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
 
+        private void AddUser()
+        {
+            var useradd = new User();
+            {
+                LoginUser = loginTB.Text;
+                PasswordUser = PasswordTB.Text;
+                IdRole = 2;
+            }
+            DBEntities.GetContext().User.Add(useradd);
+            DBEntities.GetContext().SaveChanges();
+            user.IdUser=useradd.IdUser;
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+            
         }
     }
 }

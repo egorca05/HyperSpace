@@ -12,7 +12,7 @@ namespace HyperSpace.DataFolder
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
+    
     public partial class DBEntities : DbContext
     {
         private static DBEntities context;
@@ -22,15 +22,13 @@ namespace HyperSpace.DataFolder
         }
         public static DBEntities GetContext()
         {
+
             if (context == null)
             {
                 context = new DBEntities();
             }
             return context;
-
-            }
-        
-    
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

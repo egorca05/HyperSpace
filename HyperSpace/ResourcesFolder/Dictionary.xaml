@@ -282,6 +282,12 @@
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
 
-
+    <Style TargetType="ComboBox">
+        <Setter Property="FontFamily" Value="Roboto"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="40"/>
+    </Style>
 
 </ResourceDictionary>

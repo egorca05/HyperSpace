@@ -24,6 +24,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
         public AdminMapWindow()
         {
             InitializeComponent();
+            
         }
 
         private void BtnPay_Click(object sender, RoutedEventArgs e)

@@ -65,7 +65,7 @@
           <Property Name="LoginUser" Type="nvarchar" MaxLength="40" Nullable="false" />
           <Property Name="PasswordUser" Type="nvarchar" MaxLength="40" Nullable="false" />
           <Property Name="IdRole" Type="int" Nullable="false" />
-          <Property Name="Balans" Type="decimal" Precision="7" Scale="2" />
+          <Property Name="Balans" Type="decimal" Precision="7" Scale="0" />
         </EntityType>
         <Association Name="FK_PC_StatusPC">
           <End Role="StatusPC" Type="Self.StatusPC" Multiplicity="1" />
@@ -229,7 +229,7 @@
           <Property Name="LoginUser" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PasswordUser" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IdRole" Type="Int32" Nullable="false" />
-          <Property Name="Balans" Type="Decimal" Precision="7" Scale="2" />
+          <Property Name="Balans" Type="Decimal" Precision="7" Scale="0" />
           <NavigationProperty Name="Role" Relationship="Self.FK_User_Role1" FromRole="User" ToRole="Role" />
           <NavigationProperty Name="Sale" Relationship="Self.FK_Sale_User1" FromRole="User" ToRole="Sale" />
         </EntityType>

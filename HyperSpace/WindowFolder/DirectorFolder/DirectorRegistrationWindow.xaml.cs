@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -22,6 +23,8 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         public DirectorRegistrationWindow()
         {
             InitializeComponent();
+            RoleCB.ItemsSource = DBEntities.GetContext()
+                .Role.ToList();
         }
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
@@ -31,7 +34,7 @@ namespace HyperSpace.WindowFolder.DirectorFolder
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }

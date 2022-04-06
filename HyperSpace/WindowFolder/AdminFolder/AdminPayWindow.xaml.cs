@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.ClassFolder;
 using HyperSpace.WindowFolder.AdminFolder;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.AdminFolder
 {
@@ -24,6 +25,8 @@ namespace HyperSpace.WindowFolder.AdminFolder
         public AdminPayWindow()
         {
             InitializeComponent();
+            LoginDG.ItemsSource = DBEntities.GetContext().User.ToList().
+                OrderBy(c => c.LoginUser);
         }      
 
         private void PayCardBtn_Click(object sender, RoutedEventArgs e)

@@ -44,7 +44,7 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         {
             DirectorRegistrationWindow directorRegistrationWindow = new DirectorRegistrationWindow();
             directorRegistrationWindow.Show();
-            this.Close();
+            
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
