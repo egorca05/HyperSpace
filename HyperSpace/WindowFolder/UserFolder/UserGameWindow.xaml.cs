@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.DataFolder;
+using HyperSpace.ClassFolder;
 
 namespace HyperSpace.WindowFolder.UserFolder
 {
@@ -27,7 +28,8 @@ namespace HyperSpace.WindowFolder.UserFolder
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //LoginLbl.Content = DBEntities.GetContext().User.
+            LoginLbl.Content = context.user.LoginUser;
+            BalansLbl.Content = context.user.Balans;
         }
     }
 }

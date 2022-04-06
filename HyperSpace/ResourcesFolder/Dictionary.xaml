@@ -268,6 +268,10 @@
         <Setter Property="BorderBrush" Value="MediumPurple"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="RowBackground" Value="{x:Null}"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="MediumPurple"/>
+        <Setter Property="VerticalGridLinesBrush" Value="MediumPurple"/>
+        <Setter Property="Foreground" Value="White"/>
     </Style>
     <Style TargetType="DataGridColumnHeader">
         <Setter Property="Background" Value="#FF1D1D1D"/>

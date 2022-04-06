@@ -35,7 +35,8 @@
                 Grid.Row="4" Grid.ColumnSpan="2"
                 Style="{DynamicResource BtnActive}" Click="BtmIn_Click"/>
         <Button x:Name="BtmOut" Content="Выйти" Grid.Column="3"
-                Grid.Row="4" Style="{DynamicResource BtnOut }"/>
+                Grid.Row="4" Style="{DynamicResource BtnOut }"
+                Click="BtmOut_Click"/>
         <TextBox x:Name="TbLogin" Grid.Column="2" Grid.Row="2"
                  Grid.ColumnSpan="2"/>
         <PasswordBox x:Name="PbPassword" Grid.Column="2" Grid.Row="3"

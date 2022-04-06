@@ -60,6 +60,7 @@ namespace HyperSpace.WindowFolder.NoRoleFolder
                     }
                     else 
                     {
+                        context.user = user;
                         switch(user.IdRole)
                         {
                             case 1:
@@ -88,6 +89,11 @@ namespace HyperSpace.WindowFolder.NoRoleFolder
                     MBClass.MBError(ex);
                 }
             }         
+        }
+
+        private void BtmOut_Click(object sender, RoutedEventArgs e)
+        {
+            MBClass.ExitMessageBox();
         }
     }
 }

@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassFolder\context.cs" />
     <Compile Include="ClassFolder\MBClass.cs" />
     <Compile Include="DataFolder\Model1.Context.cs">
       <AutoGen>True</AutoGen>
