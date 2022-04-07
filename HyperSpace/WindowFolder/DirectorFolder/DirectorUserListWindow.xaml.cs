@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.WindowFolder.DirectorFolder;
 using HyperSpace.ClassFolder;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -24,6 +25,8 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         public DirectorUserListWindow()
         {
             InitializeComponent();
+            UserDG.ItemsSource = DBEntities.GetContext().User.ToList().
+                OrderBy(c => c.LoginUser);
         }
 
         private void BtnMap_Click(object sender, RoutedEventArgs e)
@@ -43,14 +46,34 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
             DirectorRegistrationWindow directorRegistrationWindow = new DirectorRegistrationWindow();
-            directorRegistrationWindow.Show();
-            
+            directorRegistrationWindow.ShowDialog();
+            UserDG.ItemsSource = DBEntities.GetContext().User.ToList().
+               OrderBy(c => c.LoginUser);
+
         }
 
         private void BtnExit_Click(object sender, RoutedEventArgs e)
         {
             MBClass.ExitMessageBox();
 
+        }
+
+        private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                UserDG.ItemsSource = DBEntities.GetContext().User.Where
+                    (u => u.LoginUser.StartsWith(SearchTB.Text)).ToList();
+
+                if (UserDG.Items.Count <= 0)
+                {
+                    MBClass.MBError("Пользователь не найден");
+                }
+            }
+            catch (Exception ex)
+            {
+                MBClass.MBError(ex);
+            }
         }
     }
 }

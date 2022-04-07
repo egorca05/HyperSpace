@@ -22,7 +22,6 @@ namespace HyperSpace.DataFolder
         }
         public static DBEntities GetContext()
         {
-
             if (context == null)
             {
                 context = new DBEntities();

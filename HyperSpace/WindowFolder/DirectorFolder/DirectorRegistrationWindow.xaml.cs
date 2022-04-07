@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.DataFolder;
+using HyperSpace.ClassFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -29,12 +30,24 @@ namespace HyperSpace.WindowFolder.DirectorFolder
 
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            AddUser();
+            MBClass.MBInformation("Пользователь успешно зарегестрирован");
+            this.Close();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+        private void AddUser()
+        {
+            DBEntities.GetContext().User.Add(new User()
+            {
+                LoginUser = loginTB.Text,
+                PasswordUser = PasswordTB.Text,
+                IdRole = Int32.Parse(RoleCB.SelectedValue.ToString())
+            });
+            DBEntities.GetContext().SaveChanges();
         }
     }
 }

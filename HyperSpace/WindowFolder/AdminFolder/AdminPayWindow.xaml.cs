@@ -60,7 +60,23 @@ namespace HyperSpace.WindowFolder.AdminFolder
         {
             
             User user=LoginDG.SelectedItem as User;
-            LoginTB.Text = Convert.ToString(user.Balans);
+            LoginTB.Text = Convert.ToString(user.LoginUser);
+        }
+
+        private void LoginTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                LoginDG.ItemsSource = DBEntities.GetContext().User.Where(u => u.LoginUser.StartsWith(LoginTB.Text)).ToList();
+                if(LoginDG.Items.Count <= 0)
+                {
+                    MBClass.MBError("пользователь не найден");
+                }
+            }
+            catch (Exception ex)
+            {
+                MBClass.MBError("ex");
+            }
         }
     }
 }

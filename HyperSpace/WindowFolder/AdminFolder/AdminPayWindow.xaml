@@ -48,7 +48,7 @@
             </Grid.RowDefinitions>
             <Label x:Name="LblPay" Content="Login:" 
                    Style="{StaticResource LblNormal}"/>
-            <TextBox x:Name="LoginTB" Grid.Column="1"/>
+            <TextBox x:Name="LoginTB" Grid.Column="1" TextChanged="LoginTB_TextChanged"/>
             <Label x:Name="LblMoney" Content="Количество:" 
                    Style="{StaticResource LblNormal}" Grid.Row="2"/>
             <TextBox x:Name="MoneyTB" Grid.Column="1" Grid.Row="2"/>
