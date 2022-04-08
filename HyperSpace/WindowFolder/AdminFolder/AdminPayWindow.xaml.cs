@@ -28,16 +28,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             LoginDG.ItemsSource = DBEntities.GetContext().User.ToList().
                 OrderBy(c => c.LoginUser);
         }      
-
-        private void PayCardBtn_Click(object sender, RoutedEventArgs e)
-        {
-            User user = LoginDG.SelectedItem as User;
-            user.Balans += Convert.ToDecimal(MoneyTB.Text);
-            DBEntities.GetContext().SaveChanges();
-            MBClass.MBInformation("Успешно пополнено");
-        }
-
-        private void BtnMap_Click(object sender, RoutedEventArgs e)
+     private void BtnMap_Click(object sender, RoutedEventArgs e)
         {
             AdminMapWindow adminMapWindow = new AdminMapWindow();
             adminMapWindow.Show();
@@ -58,9 +49,17 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
         private void LoginDG_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            
-            User user=LoginDG.SelectedItem as User;
-            LoginTB.Text = Convert.ToString(user.LoginUser);
+           if(LoginDG.SelectedItem == null)
+            {
+                MBClass.MBError("Не выбран пользователь для пополнения");
+            }
+           else
+            {
+                User user = LoginDG.SelectedItem as User;
+                VariableClass.IdUser = user.IdUser;
+                new AdminPayUserWindow(LoginDG.SelectedItem as User).ShowDialog();
+                LoginDG.ItemsSource = DBEntities.GetContext().User.ToList().OrderBy(c => c.LoginUser);
+            }
         }
 
         private void LoginTB_TextChanged(object sender, TextChangedEventArgs e)
@@ -75,7 +74,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             }
             catch (Exception ex)
             {
-                MBClass.MBError("ex");
+                MBClass.MBError(ex);
             }
         }
     }

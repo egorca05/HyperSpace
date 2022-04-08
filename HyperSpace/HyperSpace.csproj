@@ -66,6 +66,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassFolder\context.cs" />
     <Compile Include="ClassFolder\MBClass.cs" />
+    <Compile Include="ClassFolder\VariableClass.cs" />
     <Compile Include="DataFolder\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -105,6 +106,9 @@
     <Compile Include="WindowFolder\AdminFolder\AdminMapWindow.xaml.cs">
       <DependentUpon>AdminMapWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowFolder\AdminFolder\AdminPayUserWindow.xaml.cs">
+      <DependentUpon>AdminPayUserWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\AdminFolder\AdminPayWindow.xaml.cs">
       <DependentUpon>AdminPayWindow.xaml</DependentUpon>
     </Compile>
@@ -141,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowFolder\AdminFolder\AdminMapWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\AdminFolder\AdminPayUserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

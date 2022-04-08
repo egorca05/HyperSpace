@@ -49,10 +49,8 @@
             <Label x:Name="LblPay" Content="Login:" 
                    Style="{StaticResource LblNormal}"/>
             <TextBox x:Name="LoginTB" Grid.Column="1" TextChanged="LoginTB_TextChanged"/>
-            <Label x:Name="LblMoney" Content="Количество:" 
-                   Style="{StaticResource LblNormal}" Grid.Row="2"/>
-            <TextBox x:Name="MoneyTB" Grid.Column="1" Grid.Row="2"/>
-            <DataGrid x:Name="LoginDG" Grid.Row="1" Grid.ColumnSpan="2" 
+            <DataGrid x:Name="LoginDG" Grid.Row="1" Grid.ColumnSpan="2"
+                      Grid.RowSpan="3"
                       AutoGenerateColumns="False" IsReadOnly="True" MouseDoubleClick="LoginDG_MouseDoubleClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№" Binding="{Binding IdUser}" Width="50"/>
@@ -60,13 +58,7 @@
                     <DataGridTextColumn Header="Баланс" Binding="{Binding Balans}" Width="100"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <Button x:Name="PayMoneyBtn" Content="Налличные" Grid.Row="3"
-                    Style="{DynamicResource BtnPassiv}"
-                    Click="PayCardBtn_Click"/>
-            <Button x:Name="PayCardBtn" Content="Карта" Grid.Row="3"
-                    Grid.Column="1"
-                    Style="{DynamicResource BtnPassiv}"
-                    Click="PayCardBtn_Click"/>
+            
         </Grid>
     </Grid>
 </Window>

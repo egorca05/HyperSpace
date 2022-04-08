@@ -17,40 +17,31 @@ using HyperSpace.ClassFolder;
 namespace HyperSpace.WindowFolder.AdminFolder
 {
     /// <summary>
-    /// Логика взаимодействия для AdminRegistrationWindow.xaml
+    /// Логика взаимодействия для AdminPayUserWindow.xaml
     /// </summary>
-    public partial class AdminRegistrationWindow : Window
+    public partial class AdminPayUserWindow : Window
     {
-        User user = new User();
-        public AdminRegistrationWindow()
+        public AdminPayUserWindow(User User)
         {
             InitializeComponent();
-            DataContext = user;
+            DataContext = User;
         }
 
-        private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
+        private void PayBtn_Click(object sender, RoutedEventArgs e)
         {
-            AddUser();
-            MBClass.MBInformation("Гуд");
-            this.Close(); 
-        }
+            User user = DBEntities.GetContext().User
+                .FirstOrDefault(s => s.IdUser == VariableClass.IdUser);
+            user.LoginUser = loginTB.Text;
+            user.Balans += Convert.ToDecimal(PayTB.Text);
 
-        private void AddUser()
-        {
-            DBEntities.GetContext().User.Add(new User()
-            {
-                LoginUser = loginTB.Text,
-                PasswordUser = PasswordTB.Text,
-                Balans = 0,
-                IdRole = 2
-            });  
             DBEntities.GetContext().SaveChanges();
+            MBClass.MBInformation("Успешно");
+            this.Close();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
-            
         }
     }
 }

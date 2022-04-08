@@ -66,12 +66,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             try
             {
                 UserDG.ItemsSource = DBEntities.GetContext().User.Where
-                    (u => u.LoginUser.StartsWith(SearchTB.Text)).ToList();
-
-                if (UserDG.Items.Count <= 0)
-                {
-                    MBClass.MBError("Пользователь не найден");
-                }
+                    (u => u.LoginUser.StartsWith(SearchTB.Text)).ToList();               
             }
             catch (Exception ex)
             {
