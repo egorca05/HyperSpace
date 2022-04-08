@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HyperSpace.WindowFolder.DirectorFolder;
 using HyperSpace.ClassFolder;
+using HyperSpace.DataFolder;
 
 namespace HyperSpace.WindowFolder.DirectorFolder
 {
@@ -24,6 +25,8 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         public DirectorReportWindow()
         {
             InitializeComponent();
+            ReportDG.ItemsSource = DBEntities.GetContext().Sale.ToList().
+                OrderBy(c => c.IdUser);
         }
 
         private void BtnMap_Click(object sender, RoutedEventArgs e)
