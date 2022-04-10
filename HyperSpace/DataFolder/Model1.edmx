@@ -28,9 +28,8 @@
           <Property Name="IdUser" Type="int" Nullable="false" />
           <Property Name="IdPC" Type="int" Nullable="false" />
           <Property Name="IdTarif" Type="int" Nullable="false" />
-          <Property Name="DateSale" Type="date" Nullable="false" />
-          <Property Name="TimeInSale" Type="time" Precision="7" Nullable="false" />
-          <Property Name="TimeOutSale" Type="time" Precision="7" Nullable="false" />
+          <Property Name="TimeInSale" Type="date" Nullable="false" />
+          <Property Name="TimeOutSale" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="StatusPC">
           <Key>
@@ -187,9 +186,8 @@
           <Property Name="IdUser" Type="Int32" Nullable="false" />
           <Property Name="IdPC" Type="Int32" Nullable="false" />
           <Property Name="IdTarif" Type="Int32" Nullable="false" />
-          <Property Name="DateSale" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="TimeInSale" Type="Time" Nullable="false" Precision="7" />
-          <Property Name="TimeOutSale" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="TimeInSale" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="TimeOutSale" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="PC" Relationship="Self.FK_Sale_PC1" FromRole="Sale" ToRole="PC" />
           <NavigationProperty Name="Tarif" Relationship="Self.FK_Sale_Tarif1" FromRole="Sale" ToRole="Tarif" />
           <NavigationProperty Name="User" Relationship="Self.FK_Sale_User1" FromRole="Sale" ToRole="User" />
@@ -352,7 +350,6 @@
                 <ScalarProperty Name="IdUser" ColumnName="IdUser" />
                 <ScalarProperty Name="IdPC" ColumnName="IdPC" />
                 <ScalarProperty Name="IdTarif" ColumnName="IdTarif" />
-                <ScalarProperty Name="DateSale" ColumnName="DateSale" />
                 <ScalarProperty Name="TimeInSale" ColumnName="TimeInSale" />
                 <ScalarProperty Name="TimeOutSale" ColumnName="TimeOutSale" />
               </MappingFragment>

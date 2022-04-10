@@ -31,7 +31,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
         private void RegistrationBtn_Click(object sender, RoutedEventArgs e)
         {
             AddUser();
-            MBClass.MBInformation("Гуд");
+            MBClass.MBInformation("Пользователь зарегистрирован");
             this.Close(); 
         }
 

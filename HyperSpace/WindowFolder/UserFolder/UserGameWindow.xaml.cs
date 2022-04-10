@@ -28,8 +28,27 @@ namespace HyperSpace.WindowFolder.UserFolder
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            //Адаптация под логин и баланс 
             LoginLbl.Content = context.user.LoginUser;
             BalansLbl.Content = context.user.Balans;
+
+            Random random = new Random();        
+
+            Sale sale = DBEntities.GetContext().Sale.FirstOrDefault();
+            sale.IdUser = context.user.IdUser;
+            sale.TimeInSale = DateTime.Today;
+            sale.IdPC = random.Next(1,6);
+            sale.IdTarif = random.Next(1,3);
+            DBEntities.GetContext().SaveChanges();
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {            
+            Sale sale = DBEntities.GetContext().Sale.FirstOrDefault();
+            sale.TimeOutSale = DateTime.Today;
+            DBEntities.GetContext().SaveChanges();
+            this.Close();
+
         }
     }
 }

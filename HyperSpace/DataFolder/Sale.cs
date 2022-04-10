@@ -18,9 +18,8 @@ namespace HyperSpace.DataFolder
         public int IdUser { get; set; }
         public int IdPC { get; set; }
         public int IdTarif { get; set; }
-        public System.DateTime DateSale { get; set; }
-        public System.TimeSpan TimeInSale { get; set; }
-        public System.TimeSpan TimeOutSale { get; set; }
+        public System.DateTime TimeInSale { get; set; }
+        public System.DateTime TimeOutSale { get; set; }
     
         public virtual PC PC { get; set; }
         public virtual Tarif Tarif { get; set; }

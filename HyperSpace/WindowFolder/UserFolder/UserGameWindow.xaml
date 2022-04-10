@@ -31,6 +31,7 @@
             <Label x:Name="LoginLbl" DockPanel.Dock="Top" Content="UserName" Style="{StaticResource LblNormal}"/>
             <Label x:Name="BalansLbl" DockPanel.Dock="Right" Content="1000Р" Style="{StaticResource LblBalans}"/>
             <Label DockPanel.Dock="Right" Content="Баланс:" Style="{StaticResource LblBalans2}"/>
+            <Button DockPanel.Dock="Left" x:Name="Exit" Style="{DynamicResource BtnExitElipse}" Click="Exit_Click"/>
         </DockPanel>
         <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource BtnGame}">
             <StackPanel>
