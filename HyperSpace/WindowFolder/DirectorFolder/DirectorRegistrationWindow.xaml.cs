@@ -45,8 +45,9 @@ namespace HyperSpace.WindowFolder.DirectorFolder
             {
                 LoginUser = loginTB.Text,
                 PasswordUser = PasswordTB.Text,
-                IdRole = Int32.Parse(RoleCB.SelectedValue.ToString())
-            });
+                IdRole = Int32.Parse(RoleCB.SelectedValue.ToString()),
+                Balans = 0
+            }); ;
             DBEntities.GetContext().SaveChanges();
         }
     }

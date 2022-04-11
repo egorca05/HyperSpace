@@ -48,5 +48,12 @@ namespace HyperSpace.WindowFolder.DirectorFolder
         {
             MBClass.ExitMessageBox();
         }
+
+        private void SearchLoginTB_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ReportDG.ItemsSource = DBEntities.GetContext().Sale.Where
+                    (u => u.User.LoginUser.StartsWith(SearchLoginTB.Text)
+                    || u.Tarif.NameTarif.StartsWith(SearchLoginTB.Text)).ToList();
+        }
     }
 }
