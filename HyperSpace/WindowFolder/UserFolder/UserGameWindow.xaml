@@ -22,6 +22,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition Height="50"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Image Style="{DynamicResource ImgLogo}"/>
@@ -31,7 +32,7 @@
             <Label x:Name="LoginLbl" DockPanel.Dock="Top" Content="UserName" Style="{StaticResource LblNormal}"/>
             <Label x:Name="BalansLbl" DockPanel.Dock="Right" Content="1000Р" Style="{StaticResource LblBalans}"/>
             <Label DockPanel.Dock="Right" Content="Баланс:" Style="{StaticResource LblBalans2}"/>
-            <Button DockPanel.Dock="Left" x:Name="Exit" Style="{DynamicResource BtnExitElipse}" Click="Exit_Click"/>
+            
         </DockPanel>
         <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource BtnGame}">
             <StackPanel>
@@ -81,11 +82,12 @@
                 <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
-        <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource BtnGame}">
+        <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource BtnGame}" Click="Exit_Click">
             <StackPanel>
                 <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
                 <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
+        <Button x:Name="Exit" Click="Exit_Click" Style="{DynamicResource BtnExitElipse}" Grid.Column="2" Grid.Row="6"/>
     </Grid>
 </Window>

@@ -31,21 +31,28 @@ namespace HyperSpace.WindowFolder.UserFolder
             //Адаптация под логин и баланс 
             LoginLbl.Content = context.user.LoginUser;
             BalansLbl.Content = context.user.Balans;
+            TimeIn();
+        }
 
-            Random random = new Random();        
-
-            Sale sale = DBEntities.GetContext().Sale.FirstOrDefault();
-            sale.IdUser = context.user.IdUser;
-            sale.TimeInSale = DateTime.Today;
-            sale.IdPC = random.Next(1,6);
-            sale.IdTarif = random.Next(1,3);
+        private void TimeIn()
+        {
+            Random random = new Random();
+            var temp = DBEntities.GetContext().Sale.Add(new Sale()
+            {
+                IdUser = context.user.IdUser,
+                TimeInSale = DateTime.Now,
+                IdPC = random.Next(1, 6),
+                IdTarif = random.Next(1, 3),
+            });
             DBEntities.GetContext().SaveChanges();
+            context.sale = temp;
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
-        {            
-            Sale sale = DBEntities.GetContext().Sale.FirstOrDefault();
-            sale.TimeOutSale = DateTime.Today;
+        {
+            Sale sale = DBEntities.GetContext().Sale
+                .FirstOrDefault(s => s.IdSale == context.sale.IdSale);
+            sale.TimeOutSale = DateTime.Now;
             DBEntities.GetContext().SaveChanges();
             this.Close();
 

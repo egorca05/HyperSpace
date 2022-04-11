@@ -10,5 +10,6 @@ namespace HyperSpace.ClassFolder
     class context
     {
         public static User user;
+        public static Sale sale;
     }
 }

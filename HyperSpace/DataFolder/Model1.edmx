@@ -28,8 +28,8 @@
           <Property Name="IdUser" Type="int" Nullable="false" />
           <Property Name="IdPC" Type="int" Nullable="false" />
           <Property Name="IdTarif" Type="int" Nullable="false" />
-          <Property Name="TimeInSale" Type="date" Nullable="false" />
-          <Property Name="TimeOutSale" Type="date" Nullable="false" />
+          <Property Name="TimeInSale" Type="datetime" Nullable="false" />
+          <Property Name="TimeOutSale" Type="datetime" />
         </EntityType>
         <EntityType Name="StatusPC">
           <Key>
@@ -186,8 +186,8 @@
           <Property Name="IdUser" Type="Int32" Nullable="false" />
           <Property Name="IdPC" Type="Int32" Nullable="false" />
           <Property Name="IdTarif" Type="Int32" Nullable="false" />
-          <Property Name="TimeInSale" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="TimeOutSale" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="TimeInSale" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="TimeOutSale" Type="DateTime" Precision="3" />
           <NavigationProperty Name="PC" Relationship="Self.FK_Sale_PC1" FromRole="Sale" ToRole="PC" />
           <NavigationProperty Name="Tarif" Relationship="Self.FK_Sale_Tarif1" FromRole="Sale" ToRole="Tarif" />
           <NavigationProperty Name="User" Relationship="Self.FK_Sale_User1" FromRole="Sale" ToRole="User" />
