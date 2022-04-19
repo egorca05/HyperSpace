@@ -30,7 +30,7 @@
                Style="{StaticResource LblLogo}"/>
         <DockPanel Grid.Row="1" Grid.Column="3">
             <Label x:Name="LoginLbl" DockPanel.Dock="Top" Content="UserName" Style="{StaticResource LblNormal}"/>
-            <Label x:Name="BalansLbl" DockPanel.Dock="Right" Content="1000Р" Style="{StaticResource LblBalans}"/>
+            <Label x:Name="BalansLbl" DockPanel.Dock="Right" Content="----Р" Style="{StaticResource LblBalans}"/>
             <Label DockPanel.Dock="Right" Content="Баланс:" Style="{StaticResource LblBalans2}"/>
             
         </DockPanel>

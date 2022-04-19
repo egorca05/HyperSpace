@@ -265,6 +265,15 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="ResourcesFolder\ImgFolder\Apex.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\AUSTRONER.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\BATL.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\Elite.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\Papers.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\Rainbow.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\RUST.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\SeaOfThies.png" />
+    <Resource Include="ResourcesFolder\ImgFolder\WARZONE.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
