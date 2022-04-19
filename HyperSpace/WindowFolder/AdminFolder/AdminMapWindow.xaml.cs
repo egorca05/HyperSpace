@@ -27,6 +27,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             
         }
 
+
         private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
             AdminPayWindow adminPayWindow = new AdminPayWindow();
@@ -58,5 +59,10 @@ namespace HyperSpace.WindowFolder.AdminFolder
         {
             public static int work1;
         }
-    }
+
+		private void BtnPower_Click(object sender, RoutedEventArgs e)
+		{
+            PC1.IsEnabled=false;
+		}
+	}
 }

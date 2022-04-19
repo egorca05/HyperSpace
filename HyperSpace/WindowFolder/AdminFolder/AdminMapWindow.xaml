@@ -35,7 +35,7 @@
                 Click="BtnUser_Click"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
             <Button x:Name="BtnPower"  Grid.Column="1" Grid.Row="4" 
-                    Style="{DynamicResource BtnMenuMap}">
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnPower_Click">
                 <Image Source="/ResourcesFolder/ImgFolder/charm_power.png" 
                        Width="40"/>
             </Button>
@@ -75,14 +75,13 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ToggleButton x:Name="PC1" Content="1" f
-                          Checked="PC1_Checked"/>
+            <ToggleButton x:Name="PC1" Content="1"
+                          Checked="PC1_Checked" Style="{DynamicResource TogBtnPC}"/>
             <Button x:Name="PC2" Content="2" Style="{DynamicResource BtnPCOn}"
                     Grid.Column="1" Grid.Row="0"/>
             <Button x:Name="PC3" Content="3" Style="{DynamicResource BtnPCUpDate}"
                     Grid.Column="2" Grid.Row="0"/>
-            <Button x:Name="PC4" Content="4" Style="{DynamicResource BtnPC}"
-                    Grid.Column="0" Grid.Row="2"/>
+            
         </Grid>
     </Grid>
 </Window>

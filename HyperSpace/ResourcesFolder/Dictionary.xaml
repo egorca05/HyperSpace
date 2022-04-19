@@ -200,7 +200,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Width" Value="50"/>
         <Setter Property="Height" Value="50"/>
-        <!--<Setter Property="Template">
+        <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Border x:Name="BorderStyle" CornerRadius="10"
@@ -210,9 +210,16 @@
                                           VerticalAlignment="Center"
                                           TextElement.FontFamily="Roboto"/>
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="BorderBrush" Value="Red"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                        </Trigger>
+                        
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
-        </Setter>-->
+        </Setter>
     </Style>
 
 
