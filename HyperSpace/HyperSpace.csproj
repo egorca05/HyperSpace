@@ -103,6 +103,9 @@
     <Compile Include="DataFolder\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="WindowFolder\AdminFolder\AdminEditWindow.xaml.cs">
+      <DependentUpon>AdminEditWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowFolder\AdminFolder\AdminMapWindow.xaml.cs">
       <DependentUpon>AdminMapWindow.xaml</DependentUpon>
     </Compile>
@@ -141,6 +144,10 @@
       <DependentUpon>UserGameWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="ResourcesFolder\Dictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowFolder\AdminFolder\AdminEditWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

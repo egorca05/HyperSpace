@@ -53,7 +53,7 @@
                     Click="RegistrationBtn_Click"/>
             <TextBox x:Name="SearchTB" Grid.Column="3" TextChanged="SearchTB_TextChanged"/>
             <DataGrid x:Name="UserDG" AutoGenerateColumns="False" 
-                      IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="3">
+                      IsReadOnly="True" Grid.Row="1" Grid.ColumnSpan="3" MouseDoubleClick="UserDG_MouseDoubleClick">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№" Binding="{Binding IdUser}" Width="50"/>
                     <DataGridTextColumn Header="Логин" Binding="{Binding LoginUser}" Width="*"/>

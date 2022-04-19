@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfGapeev.FolderWindows.FolderAdmin.WindowMenuAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGapeev.FolderWindows.FolderAdmin"
+        mc:Ignorable="d"
+        Title="WindowMenuAdmin" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Image Style="{StaticResource ImgLogo}"/>
+        <Label x:Name="LblLogo" Content="Меню"
+               Grid.Column="2" Grid.Row="1"
+               Style="{StaticResource LblLogo}"/>
+        <Button x:Name="BtnListClient" Content="Лист клиентов"
+                Style="{StaticResource BtnNormal}"
+                Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="BtnAddStaff" Content="Добавить сотрудника"
+                Style="{StaticResource BtnNormal}"
+                Grid.Column="2" Grid.Row="2"
+                Click="BtnAddStaff_Click"/>
+    </Grid>
+</Window>

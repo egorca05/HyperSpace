@@ -49,11 +49,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
 		private void PC1_Checked(object sender, RoutedEventArgs e)
 		{
-			Work.work1 = 1;
-            if (Work.work1 ==1)
-			{
-                PC1.BorderBrush = ;
-			}
+			Work.work1 = 1;          
 		}
         public class Work
         {
@@ -62,7 +58,11 @@ namespace HyperSpace.WindowFolder.AdminFolder
 
 		private void BtnPower_Click(object sender, RoutedEventArgs e)
 		{
-            PC1.IsEnabled=false;
-		}
+            if (Work.work1 == 1)
+            {
+                MBClass.MBInformation("Работает");
+                //PC1.BorderBrush = ;
+            }
+        }
 	}
 }

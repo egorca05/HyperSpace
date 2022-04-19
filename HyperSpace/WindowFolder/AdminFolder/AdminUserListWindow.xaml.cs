@@ -73,5 +73,20 @@ namespace HyperSpace.WindowFolder.AdminFolder
                 MBClass.MBError(ex);
             }
         }
-    }
+
+		private void UserDG_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+		{
+            if (UserDG.SelectedItem == null)
+            {
+                MBClass.MBError("Не выбран пользователь для пополнения");
+            }
+            else
+            {
+                User user = UserDG.SelectedItem as User;
+                VariableClass.IdUser = user.IdUser;
+                new AdminEditWindow(UserDG.SelectedItem as User).Show();
+                UserDG.ItemsSource = DBEntities.GetContext().User.ToList().OrderBy(c => c.LoginUser);
+            }
+        }
+	}
 }
