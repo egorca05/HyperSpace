@@ -45,5 +45,18 @@ namespace HyperSpace.WindowFolder.AdminFolder
         {
             MBClass.ExitMessageBox();
         }
+
+		private void PC1_Checked(object sender, RoutedEventArgs e)
+		{
+			Work.work1 = 1;
+            if (Work.work1 ==1)
+			{
+                PC1.BorderBrush = ;
+			}
+		}
+        public class Work
+        {
+            public static int work1;
+        }
     }
 }

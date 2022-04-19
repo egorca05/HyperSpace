@@ -75,7 +75,8 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button x:Name="PC1" Content="1" Style="{DynamicResource BtnPC}"/>
+            <ToggleButton x:Name="PC1" Content="1" 
+                          Checked="PC1_Checked"/>
             <Button x:Name="PC2" Content="2" Style="{DynamicResource BtnPCOn}"
                     Grid.Column="1" Grid.Row="0"/>
             <Button x:Name="PC3" Content="3" Style="{DynamicResource BtnPCUpDate}"

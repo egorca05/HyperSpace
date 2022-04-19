@@ -21,13 +21,15 @@ namespace HyperSpace.DataFolder
         {
         }
         public static DBEntities GetContext()
-        {
+		{
             if (context == null)
+			{
                 context = new DBEntities();
+			}
             return context;
 
-        }
-
+		}
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
