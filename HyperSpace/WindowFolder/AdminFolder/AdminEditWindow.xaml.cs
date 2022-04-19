@@ -26,6 +26,9 @@ namespace HyperSpace.WindowFolder.AdminFolder
 		{
 			InitializeComponent();
 			DataContext = User;
+			var role = DBEntities.GetContext().Role
+				.FirstOrDefault(s => s.IdRole == User.IdRole);			
+			RoleTB.Text=role.NameRole;
 		}
 
 		private void SaveBtn_Click(object sender, RoutedEventArgs e)

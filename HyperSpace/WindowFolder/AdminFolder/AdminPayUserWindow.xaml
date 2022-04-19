@@ -23,7 +23,7 @@
             <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        <Label x:Name="LblLogo" Content="Регистрация"
+        <Label x:Name="LblLogo" Content="Пополнение"
                Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
                Style="{StaticResource LblLogo}"/>
         

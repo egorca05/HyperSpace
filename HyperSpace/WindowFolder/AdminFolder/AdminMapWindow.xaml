@@ -40,12 +40,12 @@
                        Width="40"/>
             </Button>
             <Button x:Name="BtnRestart"  Grid.Column="1" Grid.Row="4"
-                    Style="{DynamicResource BtnMenuMap}">
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnRestart_Click">
                 <Image Source="/ResourcesFolder/ImgFolder/iconoir_restart.png"
                        Width="40"/>
             </Button>
             <Button x:Name="BtnUpDate"  Grid.Column="1" Grid.Row="4"
-                    Style="{DynamicResource BtnMenuMap}">
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnUpDate_Click">
                 <Image Source="/ResourcesFolder/ImgFolder/update.png"
                        Width="40"/>
             </Button>
@@ -76,11 +76,16 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <ToggleButton x:Name="PC1" Content="1"
-                          Checked="PC1_Checked" Style="{DynamicResource TogBtnPC}"/>
-            <Button x:Name="PC2" Content="2" Style="{DynamicResource BtnPCOn}"
-                    Grid.Column="1" Grid.Row="0"/>
-            <Button x:Name="PC3" Content="3" Style="{DynamicResource BtnPCUpDate}"
-                    Grid.Column="2" Grid.Row="0"/>
+                          Checked="PC1_Checked" Unchecked="PC1_Unchecked"  
+                          Style="{DynamicResource TogBtnPC}"/>
+            <ToggleButton x:Name="PC2" Content="2"
+                          Checked="PC2_Checked" Unchecked="PC2_Unchecked"  
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="1"/>
+            <ToggleButton x:Name="PC3" Content="3"
+                          Checked="PC3_Checked" Unchecked="PC3_Unchecked"  
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="2"/>
             
         </Grid>
     </Grid>
