@@ -1,0 +1,93 @@
+﻿<Window x:Class="HyperSpace.WindowFolder.UserFolder.UserGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HyperSpace.WindowFolder.UserFolder"
+        mc:Ignorable="d"
+        Title="Игры" Height="910" Width="962" WindowStyle="None"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Image Style="{DynamicResource ImgLogo}"/>
+        <Label Content="Игры" Grid.Row="1" Grid.Column="2"
+               Style="{StaticResource LblLogo}"/>
+        <DockPanel Grid.Row="1" Grid.Column="3">
+            <Label x:Name="LoginLbl" DockPanel.Dock="Top" Content="UserName" Style="{StaticResource LblNormal}"/>
+            <Label x:Name="BalansLbl" DockPanel.Dock="Right" Content="1000Р" Style="{StaticResource LblBalans}"/>
+            <Label DockPanel.Dock="Right" Content="Баланс:" Style="{StaticResource LblBalans2}"/>
+            
+        </DockPanel>
+        <Button Grid.Row="3" Grid.Column="1" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="2" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource BtnGame}">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource BtnGame}" Click="Exit_Click">
+            <StackPanel>
+                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
+                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Exit" Content="Выход" Click="Exit_Click" Style="{DynamicResource BtnOut}" Grid.Column="2" Grid.Row="6"/>
+    </Grid>
+</Window>

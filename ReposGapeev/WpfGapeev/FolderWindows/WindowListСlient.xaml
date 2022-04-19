@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfGapeev.FolderWindows.WindowListСlient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGapeev.FolderWindows"
+        mc:Ignorable="d"
+        Title="Лист клиентов" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition  Height="100"/>
+            <RowDefinition  />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Image Style="{StaticResource ImgLogo}"/>
+        <Label x:Name="LblLogo" Content="Cписок клиентов"
+               Grid.Column="2" Grid.Row="1"
+               Style="{StaticResource LblLogo}"/>
+        <DataGrid x:Name="DGListClient" AutoGenerateColumns="False"
+                  Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" IsReadOnly="True" MouseDoubleClick="DGListClient_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{ Binding IdClient}"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{ Binding LastNameClient}"/>
+                <DataGridTextColumn Header="Имя" Binding="{ Binding FirstNameClient}"/>
+                <DataGridTextColumn Header="отчество" Binding="{ Binding MiddleNameClient}"/>
+                <DataGridTextColumn Header="Телефон" Binding="{ Binding PhoneClient}"/>
+                <DataGridTextColumn Header="Емаил" Binding="{ Binding EmailClient}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="LblSearch" Content="Поиск:"
+               Grid.Column="1" Grid.Row="2"
+               Style="{StaticResource LblNormal}"/>
+        <TextBox x:Name="SearchTb" Grid.Row="2" Grid.Column="2"
+                 TextChanged="SearchTb_TextChanged"/>
+        <Button x:Name="BtnAdd" Content="Добавить клиента"
+                Grid.Column="1" Grid.Row="4" 
+                Style="{StaticResource BtnNormal}"
+                Click="BtnAdd_Click"/>
+        <Button x:Name="BtnAddStaff" Content="Добавление сотрудника"
+                Grid.Column="2" Grid.Row="4" 
+                Style="{StaticResource BtnNormal}"
+                Click="BtnAddStaff_Click"/>
+    </Grid>
+</Window>
