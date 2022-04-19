@@ -50,7 +50,7 @@
                        Width="40"/>
             </Button>
             <Button x:Name="BtnWarning"  Grid.Column="1" Grid.Row="4" 
-                    Style="{DynamicResource BtnMenuMap}">
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnWarning_Click">
                 <Image Source="/ResourcesFolder/ImgFolder/warning.png" 
                        Width="40"/>
             </Button>

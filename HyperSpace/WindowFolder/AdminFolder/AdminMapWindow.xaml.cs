@@ -125,6 +125,11 @@ namespace HyperSpace.WindowFolder.AdminFolder
 		private void PC3_Unchecked(object sender, RoutedEventArgs e)
 		{
             Work.work3 = 0;
-        }	
+        }
+
+		private void BtnWarning_Click(object sender, RoutedEventArgs e)
+		{
+            MBClass.MBInformation("Выдано предупреждение");
+        }
 	}
 }

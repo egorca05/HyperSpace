@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.UserFolder"
         mc:Ignorable="d"
-        Title="Игры" Height="840" Width="962" WindowStyle="None"
+        Title="Игры" Height="910" Width="962" WindowStyle="None"
         WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Image Style="{DynamicResource ImgLogo}"/>
@@ -88,6 +88,6 @@
                 <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
-        <Button x:Name="Exit" Click="Exit_Click" Style="{DynamicResource BtnExitElipse}" Grid.Column="2" Grid.Row="6"/>
+        <Button x:Name="Exit" Content="Выход" Click="Exit_Click" Style="{DynamicResource BtnOut}" Grid.Column="2" Grid.Row="6"/>
     </Grid>
 </Window>
