@@ -43,12 +43,6 @@ namespace HyperSpace.WindowFolder.DirectorFolder
             directorUserListWindow.Show();
             this.Close();
         }
-
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MBClass.ExitMessageBox();
-        }
-
         private void SearchLoginTB_TextChanged(object sender, TextChangedEventArgs e)
         {
             ReportDG.ItemsSource = DBEntities.GetContext().Sale.Where

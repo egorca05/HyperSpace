@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.DirectorFolder"
         mc:Ignorable="d"
-        Title="Изменение" Height="600" Width="500"
-        WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Редактирование" Height="600" Width="500"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>

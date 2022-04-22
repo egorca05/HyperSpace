@@ -28,11 +28,6 @@ namespace HyperSpace.WindowFolder.AdminFolder
                 OrderBy(c => c.LoginUser);
         }
 
-        private void BtnUser_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void BtnMap_Click(object sender, RoutedEventArgs e)
         {
             AdminMapWindow adminMapWindow = new AdminMapWindow();
@@ -54,11 +49,6 @@ namespace HyperSpace.WindowFolder.AdminFolder
             adminRegistrationWindow.ShowDialog();
             UserDG.ItemsSource = DBEntities.GetContext().User.ToList().
                OrderBy(c => c.LoginUser);
-        }
-
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MBClass.ExitMessageBox();
         }
 
         private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)

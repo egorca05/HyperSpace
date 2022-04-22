@@ -42,50 +42,50 @@
         </Button>
         <Button Grid.Row="4" Grid.Column="1" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/Elite.png" Width="290"/>
+                <Label Content="Elite Dungerons" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/RUST.png" Width="290"/>
+                <Label Content="RUST" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="3" Grid.Column="2" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/AUSTRONER.png" Width="290"/>
+                <Label Content="Austroneer" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="4" Grid.Column="2" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/Papers.png" Width="290"/>
+                <Label Content="Papers please" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="5" Grid.Column="2" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/SeaOfThies.png" Width="290"/>
+                <Label Content="Sea of thies" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="3" Grid.Column="3" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/BATL.png" Width="290"/>
+                <Label Content="BATTLEFIELD 5" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="4" Grid.Column="3" Style="{StaticResource BtnGame}">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/Rainbow.png" Width="290"/>
+                <Label Content="Rainbow Six" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button Grid.Row="5" Grid.Column="3" Style="{StaticResource BtnGame}" Click="Exit_Click">
             <StackPanel>
-                <Image Source="/ResourcesFolder/ImgFolder/image 1.png" Width="290"/>
-                <Label Content="Apex Legends" Style="{StaticResource LblGame}"/>
+                <Image Source="/HyperSpace;component/ResourcesFolder/ImgFolder/WARZONE.png" Width="290"/>
+                <Label Content="WARZONE" Style="{StaticResource LblGame}"/>
             </StackPanel>
         </Button>
         <Button x:Name="Exit" Content="Выход" Click="Exit_Click" Style="{DynamicResource BtnOut}" Grid.Column="2" Grid.Row="6"/>

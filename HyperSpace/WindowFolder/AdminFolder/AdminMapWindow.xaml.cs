@@ -39,12 +39,7 @@ namespace HyperSpace.WindowFolder.AdminFolder
             AdminUserListWindow adminUserListWindow = new AdminUserListWindow();
             adminUserListWindow.Show();
             this.Close();
-        }
-
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MBClass.ExitMessageBox();
-        }
+        }       
         public class Work
         {
             public static int work1;

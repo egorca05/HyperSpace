@@ -52,13 +52,6 @@ namespace HyperSpace.WindowFolder.DirectorFolder
                OrderBy(c => c.LoginUser);
 
         }
-
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MBClass.ExitMessageBox();
-
-        }
-
         private void SearchTB_TextChanged(object sender, TextChangedEventArgs e)
         {
             try

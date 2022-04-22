@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.AdminFolder"
         mc:Ignorable="d"
         Title="Пополнение" Height="450" Width="800" 
-        WindowStartupLocation="CenterScreen" WindowStyle="None">
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
@@ -23,8 +23,6 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Image x:Name="ImgLogo" Style="{DynamicResource ImgLogo}"/>
-        <Button x:Name="BtnExit" Style="{DynamicResource BtnExitElipse}"
-                Click="BtnExit_Click"/>
         <Button x:Name="BtnMap" Content="Карта" Grid.Column="1" 
                 Grid.Row="2" Style="{DynamicResource BtnMenuAdmin}"
                 Click="BtnMap_Click"/>

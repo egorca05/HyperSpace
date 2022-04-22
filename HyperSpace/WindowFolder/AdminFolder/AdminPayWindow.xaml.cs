@@ -42,11 +42,6 @@ namespace HyperSpace.WindowFolder.AdminFolder
             this.Close();
         }
 
-        private void BtnExit_Click(object sender, RoutedEventArgs e)
-        {
-            MBClass.ExitMessageBox();
-        }
-
         private void LoginDG_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
            if(LoginDG.SelectedItem == null)

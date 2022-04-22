@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.DirectorFolder"
         mc:Ignorable="d"
-        Title="Карта" Height="450" Width="800"
-        WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Карта клуба" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
@@ -23,8 +23,6 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Image x:Name="ImgLogo" Style="{DynamicResource ImgLogo}"/>
-        <Button x:Name="BtnExit" Style="{DynamicResource BtnExitElipse}"
-                Click="BtnExit_Click"/>
         <Button x:Name="BtnMap" Content="Карта" Grid.Column="1" 
                 Grid.Row="2" Style="{DynamicResource BtnMenuAdminActive}"/>
         <Button x:Name="BtnReport" Content="Отчеты" Grid.Column="1" 
