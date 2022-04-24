@@ -47,5 +47,10 @@ namespace HyperSpace.WindowFolder.AdminFolder
 		{
 			this.Close();
 		}
-	}
+
+        private void Grid_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+    }
 }

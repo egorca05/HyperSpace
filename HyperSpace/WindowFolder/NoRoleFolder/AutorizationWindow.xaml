@@ -8,6 +8,9 @@
         Title="Авторизация" Height="450" Width="600"
         WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ResourcesFolder/ImgFolder/back.png"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition/>

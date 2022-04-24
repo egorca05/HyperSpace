@@ -1,8 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Style TargetType="Grid">
-        <Setter Property="Background" Value="#FF1D1D1D"/>
-    </Style>
     
     <Style TargetType="Image" x:Key="ImgLogo">
         <Setter Property="Source" Value="/ResourcesFolder/ImgFolder/Group 7.png"/>
