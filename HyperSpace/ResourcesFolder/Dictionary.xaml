@@ -286,6 +286,7 @@
         <Setter Property="HorizontalGridLinesBrush" Value="MediumPurple"/>
         <Setter Property="VerticalGridLinesBrush" Value="MediumPurple"/>
         <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="10"/>
     </Style>
     <Style TargetType="DataGridColumnHeader">
         <Setter Property="Background" Value="#FF1D1D1D"/>
@@ -294,6 +295,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10"/>
     </Style>
 
     <Style TargetType="ComboBox">
@@ -301,6 +303,6 @@
         <Setter Property="Margin" Value="10"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="Height" Value="40"/>
+        <Setter Property="Height" Value="50"/>
     </Style>
 </ResourceDictionary>

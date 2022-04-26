@@ -12,6 +12,7 @@
             <ColumnDefinition Width="10"/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="40"/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -24,7 +25,7 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Label x:Name="LblLogo" Content="Регистрация"
-               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
+               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"
                Style="{StaticResource LblLogo}"/>
         <Label x:Name="loginLbl" Content="Логин:" Grid.Column="1" Grid.Row="2"
                    Style="{StaticResource LblNormal}"/>
@@ -37,11 +38,11 @@
         <ComboBox x:Name="RoleCB" Grid.Column="2" Grid.Row="4"
                   SelectedItem="{Binding Role}" DisplayMemberPath="NameRole"
                   SelectedValuePath="IdRole"/>
-        <Button x:Name="RegistrationBtn" Content="Регистрация" Grid.Column="1"
-                Grid.Row="5" Style="{StaticResource BtnPassiv}"
+        <Button x:Name="RegistrationBtn" Content="Регистрация" Grid.Column="2"
+                Grid.Row="5" Style="{StaticResource BtnPassiv}" Grid.ColumnSpan="2"
                 Click="RegistrationBtn_Click"/>
         <Button x:Name="ExitBtn" Content="Выйти" Grid.Row="5"
-                Grid.Column="2" Style="{DynamicResource BtnOut}"
+                Grid.Column="1" Style="{DynamicResource BtnOut}"
                 Click="ExitBtn_Click"/>
     </Grid>
 </Window>

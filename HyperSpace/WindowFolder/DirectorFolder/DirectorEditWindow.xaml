@@ -10,7 +10,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="5*"/>
             <ColumnDefinition/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
@@ -24,7 +25,7 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <Label x:Name="LblLogo" Content="Редактирование"
-               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
+               Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"
                Style="{StaticResource LblLogo}"/>
 
         <Label x:Name="loginLbl" Content="Логин:" Grid.Column="1" Grid.Row="2"
@@ -43,11 +44,11 @@
                   SelectedItem="{Binding Role}" DisplayMemberPath="NameRole"
                   SelectedValuePath="IdRole" />
 
-        <Button x:Name="SaveBtn" Content="Сохранить" Grid.Column="1"
-                Grid.Row="5" Style="{StaticResource BtnPassiv}"
+        <Button x:Name="SaveBtn" Content="Сохранить" Grid.Column="2"
+                Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource BtnPassiv}"
                 Click="SaveBtn_Click"/>
         <Button x:Name="ExitBtn" Content="Выйти" Grid.Row="5"
-                Grid.Column="2" Style="{DynamicResource BtnOut}"
+                Grid.Column="1" Style="{DynamicResource BtnOut}"
                 Click="ExitBtn_Click"/>
     </Grid>
 </Window>

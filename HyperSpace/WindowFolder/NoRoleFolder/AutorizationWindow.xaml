@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.NoRoleFolder"
         mc:Ignorable="d"
-        Title="Авторизация" Height="470" Width="600"
-        WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Авторизация" Height="480" Width="600"
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>

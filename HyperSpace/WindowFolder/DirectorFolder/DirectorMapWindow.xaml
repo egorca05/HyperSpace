@@ -16,7 +16,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
-            <RowDefinition/>
+            <RowDefinition Height="90"/>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
@@ -31,29 +31,10 @@
         <Button x:Name="BtnUser" Content="Пользователи" Grid.Column="1" 
                 Grid.Row="4" Style="{DynamicResource BtnMenuAdmin}"
                 Click="BtnUser_Click"/>
-        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
-            <Button x:Name="BtnPower"  Grid.Column="1" Grid.Row="4" 
-                    Style="{DynamicResource BtnMenuMap}" Click="BtnPower_Click">
-                <Image Source="/ResourcesFolder/ImgFolder/charm_power.png" 
-                       Width="40"/>
-            </Button>
-            <Button x:Name="BtnRestart"  Grid.Column="1" Grid.Row="4"
-                    Style="{DynamicResource BtnMenuMap}" Click="BtnRestart_Click">
-                <Image Source="/ResourcesFolder/ImgFolder/iconoir_restart.png"
-                       Width="40"/>
-            </Button>
-            <Button x:Name="BtnUpDate"  Grid.Column="1" Grid.Row="4"
-                    Style="{DynamicResource BtnMenuMap}" Click="BtnUpDate_Click">
-                <Image Source="/ResourcesFolder/ImgFolder/update.png"
-                       Width="40"/>
-            </Button>
-            <Button x:Name="BtnWarning"  Grid.Column="1" Grid.Row="4" 
-                    Style="{DynamicResource BtnMenuMap}" Click="BtnWarning_Click">
-                <Image Source="/ResourcesFolder/ImgFolder/warning.png" 
-                       Width="40"/>
-            </Button>
-            <Label x:Name="LogoLbl" Content="Карта" Style="{StaticResource LblLogo}"/>
-        </StackPanel>
+        
+        
+        <Label x:Name="LogoLbl" Content="Карта" Style="{StaticResource LblLogo}" 
+               Grid.Column="2" Grid.Row="1"/>
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -84,6 +65,98 @@
                           Checked="PC3_Checked" Unchecked="PC3_Unchecked"  
                           Style="{DynamicResource TogBtnPC}"
                           Grid.Column="2"/>
+            <ToggleButton Content="4" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="3"/>
+            <ToggleButton Content="5" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="4"/>
+
+            <ToggleButton Content="6" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="0" Grid.Row="1"/>
+            <ToggleButton Content="7" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="1" Grid.Row="1"/>
+            <ToggleButton Content="8" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="2" Grid.Row="1"/>
+            <ToggleButton Content="9" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="3" Grid.Row="1"/>
+            <ToggleButton Content="10" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="4" Grid.Row="1"/>
+
+            <ToggleButton Content="11" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="0" Grid.Row="3"/>
+            <ToggleButton Content="12" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="1" Grid.Row="3"/>
+            <ToggleButton Content="13" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="2" Grid.Row="3"/>
+            <ToggleButton Content="14" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="3" Grid.Row="3"/>
+            <ToggleButton Content="15" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="4" Grid.Row="3"/>
+
+            <ToggleButton Content="16" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="0" Grid.Row="4"/>
+            <ToggleButton Content="17" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="1" Grid.Row="4"/>
+            <ToggleButton Content="18" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="2" Grid.Row="4"/>
+            <ToggleButton Content="19" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="3" Grid.Row="4"/>
+            <ToggleButton Content="20" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="4" Grid.Row="4"/>
+
+            <ToggleButton Content="21" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="6" Grid.Row="0"/>
+            <ToggleButton Content="22" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="6" Grid.Row="1"/>
+            <ToggleButton Content="23" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="6" Grid.Row="2"/>
+            <ToggleButton Content="24" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="6" Grid.Row="3"/>
+            <ToggleButton Content="25" 
+                          Style="{DynamicResource TogBtnPC}"
+                          Grid.Column="6" Grid.Row="4"/>
+            <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="8" Grid.RowSpan="5" VerticalAlignment="Center">
+                <Button x:Name="BtnPower"  Grid.Column="1" Grid.Row="4" 
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnPower_Click">
+                    <Image Source="/ResourcesFolder/ImgFolder/charm_power.png" 
+                       Width="40"/>
+                </Button>
+                <Button x:Name="BtnRestart"  Grid.Column="1" Grid.Row="4"
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnRestart_Click">
+                    <Image Source="/ResourcesFolder/ImgFolder/iconoir_restart.png"
+                       Width="40"/>
+                </Button>
+                <Button x:Name="BtnUpDate"  Grid.Column="1" Grid.Row="4"
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnUpDate_Click">
+                    <Image Source="/ResourcesFolder/ImgFolder/update.png"
+                       Width="40"/>
+                </Button>
+                <Button x:Name="BtnWarning"  Grid.Column="1" Grid.Row="4" 
+                    Style="{DynamicResource BtnMenuMap}" Click="BtnWarning_Click">
+                    <Image Source="/ResourcesFolder/ImgFolder/warning.png" 
+                       Width="40"/>
+                </Button>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>
