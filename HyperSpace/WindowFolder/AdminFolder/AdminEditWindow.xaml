@@ -8,9 +8,6 @@
         Title="Редактирование" Height="600" Width="500"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/ResourcesFolder/ImgFolder/back.png"/>
-        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
             <ColumnDefinition/>
@@ -29,17 +26,20 @@
         <Label x:Name="LblLogo" Content="Редактирование"
                Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
                Style="{StaticResource LblLogo}"/>
-
-        <Label x:Name="loginLbl" Content="Логин:" Grid.Column="1" Grid.Row="2"
-                   Style="{StaticResource LblNormal}"/>
-        <TextBox x:Name="loginTB" Grid.Column="2" Grid.Row="2"
+        <DockPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+            <Label x:Name="loginLbl" Content="Логин:" 
+                   Style="{StaticResource LblNormal}" Width="89"/>
+        <TextBox x:Name="loginTB"
                  Text="{Binding LoginUser}" />
+            </DockPanel>
 
-        <Label x:Name="PasswordLbl" Content="Пароль:" Grid.Column="1" Grid.Row="3"
+        <DockPanel>
+            <Label x:Name="PasswordLbl" Content="Пароль:" Grid.Column="1" Grid.Row="3"
                    Style="{StaticResource LblNormal}"/>
-        <TextBox x:Name="BalansTB" Grid.Column="2" Grid.Row="3"
+            <TextBox x:Name="BalansTB" Grid.Column="2" Grid.Row="3"
                  Text="{Binding PasswordUser}" />
 
+        </DockPanel>
         <Label x:Name="RoleLbl" Content="Роль:" Grid.Column="1" Grid.Row="4"
                    Style="{StaticResource LblNormal}"/>
         <TextBox x:Name="RoleTB" Grid.Column="2" Grid.Row="4" 

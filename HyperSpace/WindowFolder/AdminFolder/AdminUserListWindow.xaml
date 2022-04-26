@@ -31,7 +31,7 @@
                 Click="BtnPay_Click" />
         <Button x:Name="BtnUser" Content="Пользователи" Grid.Column="1" 
                 Grid.Row="4" Style="{DynamicResource BtnMenuAdminActive}"
-                Click="BtnUser_Click"/>
+                />
         <Label x:Name="LblLogo" Content="Пользователи" Grid.Column="2"
                Grid.Row="1" Style="{StaticResource LblLogo}"/>
         <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
