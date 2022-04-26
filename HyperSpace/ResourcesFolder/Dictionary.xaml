@@ -23,7 +23,6 @@
     <Style x:Key="LblNormal" TargetType="Label">
         <Setter Property="FontFamily" Value="Roboto"/>
         <Setter Property="FontSize" Value="24"/>
-        <Setter Property="Margin" Value="5"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Right"/>
         <Setter Property="Foreground" Value="White"/>
@@ -58,7 +57,6 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="BorderThickness" Value="2"/>
-        <Setter Property="Width" Value="300"/>
     </Style>
 
     <Style TargetType="PasswordBox">
@@ -73,7 +71,6 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Background" Value="{x:Null}"/>
         <Setter Property="BorderThickness" Value="2"/>
-        <Setter Property="Width" Value="300"/>
     </Style>
 
     <Style TargetType="Button" x:Key="BtnActive">
@@ -305,10 +302,5 @@
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="Height" Value="40"/>
-    </Style>
-    <Style TargetType="StackPanel">
-        <Setter Property="VerticalAlignment" Value="Center"/>
-        <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="Orientation" Value="Horizontal"/>
     </Style>
 </ResourceDictionary>

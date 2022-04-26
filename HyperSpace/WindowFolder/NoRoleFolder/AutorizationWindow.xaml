@@ -5,44 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HyperSpace.WindowFolder.NoRoleFolder"
         mc:Ignorable="d"
-        Title="Авторизация" Height="450" Width="600"
+        Title="Авторизация" Height="470" Width="600"
         WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="58*"/>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition Width="81*"/>
+            <ColumnDefinition Width="40"/>
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="128*"/>
+            <RowDefinition Height="97*"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        <Image Style="{DynamicResource ImgLogo}"/>
+        <Image Style="{DynamicResource ImgLogo}" Grid.Column="1" Height="108" Grid.Row="1" Width="108"/>
         <Label x:Name="LblLogo" Content="Авторизация" Grid.Column="2" 
                Grid.Row="1" Grid.ColumnSpan="2" 
-               Style="{StaticResource LblLogo}"/>
+               Style="{StaticResource LblLogo}" Margin="10,10,10,10"/>
         <Button x:Name="BtmIn" Content="Войти" Grid.Column="2"
                 Grid.Row="4"
-                Style="{DynamicResource BtnActive}" Click="BtmIn_Click"/>
+                Style="{DynamicResource BtnActive}" Click="BtmIn_Click" Margin="10,10,10,10"/>
         <Button x:Name="BtmOut" Content="Выйти" Grid.Column="3"
                 Grid.Row="4" Style="{DynamicResource BtnOut }"
-                Click="BtmOut_Click"/>
-        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3">
-            <Label x:Name="LblLogin" Content="Логин:"  Style="{StaticResource LblNormal}"/>
-            <TextBox x:Name="TbLogin" 
-                 Grid.ColumnSpan="2"/>
-        </StackPanel>
-        <StackPanel Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Margin="60,18,74.667,17" Width="438">
-            <Label x:Name="LblPassword" Content="Пароль:" Grid.Column="1" 
-               Grid.Row="3" Style="{StaticResource LblNormal}"/>
-            <PasswordBox x:Name="PbPassword" Grid.Column="2" Grid.Row="3"
-                 Grid.ColumnSpan="2"/>
-        </StackPanel>
+                Click="BtmOut_Click" Margin="10,10,10,10"/>
+
+        <Label x:Name="LblLogin" Content="Логин:"  Style="{StaticResource LblNormal}" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,268,0"/>
+        <TextBox x:Name="TbLogin" 
+                 Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="2" Margin="5,31,5,31"/>
+
+        <Label x:Name="LblPassword" Content="Пароль:" Grid.Column="1" 
+               Grid.Row="2" Style="{StaticResource LblNormal}" Grid.ColumnSpan="2" Margin="0,112,268,0" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="PbPassword" Grid.Column="2" Grid.Row="3"
+                 Grid.ColumnSpan="2" Margin="5,41,5,37"/>
+
     </Grid>
 </Window>
